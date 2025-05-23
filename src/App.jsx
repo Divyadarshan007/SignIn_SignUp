@@ -3,24 +3,22 @@ import SignIn from "./components/SignIn"
 import SignUp from "./components/SignUp"
 
 const App = () => {
-  const [signUpMode, setSignUpMode ]=useState(false);
+  const [signUpMode, setSignUpMode] = useState('');
   return (
-    <main>
-      <div className={`box ${signUpMode}`}>
+    <main className={signUpMode}>
+      <div className={`box`}>
         <div className="inner-box">
           <div className="forms-wrap">
-            <SignIn signUpMode={signUpMode} setSignUpMode={setSignUpMode}/>
-            <SignUp />
+            <SignIn signUpMode={signUpMode} setSignUpMode={setSignUpMode} />
+            <SignUp signUpMode={signUpMode} setSignUpMode={setSignUpMode}/>
           </div>
-          <div class="carousel">
-            <div class="images-wrapper">
-              <img src="../public/image1.png" class="image img-1 show" alt="" />
+          <div className="carousel">
+            <div className="images-wrapper">
+              <img src="public/image1.png" className="image img-1 show" />
             </div>
-            <div class="text-slider">
-              <div class="text-wrap">
-                <div class="text-group">
-                  <h2>Create your own courses</h2>
-                  <h2>Create your own courses</h2>
+            <div className="text-slider">
+              <div className="text-wrap">
+                <div className="text-group">
                   <h2>Create your own courses</h2>
                 </div>
               </div>

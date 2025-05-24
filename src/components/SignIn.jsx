@@ -3,7 +3,7 @@ const SignIn = ({ signUpMode, setSignUpMode }) => {
     return (
         <form action="index.html" autoComplete="off" className="sign-in-form">
             <div className="logo">
-                <img src="/public/logo.png" alt="easyclass" />
+                <img src="../../public/logo.png" alt="easyclass" />
                 <h4>easyclass</h4>
             </div>
             <div className="heading">

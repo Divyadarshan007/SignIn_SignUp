@@ -14,7 +14,7 @@ const App = () => {
           </div>
           <div className="carousel">
             <div className="images-wrapper">
-              <img src="public/image1.png" className="image img-1 show" />
+              <img src="../public/image1.png" className="image img-1 show" />
             </div>
             <div className="text-slider">
               <div className="text-wrap">
